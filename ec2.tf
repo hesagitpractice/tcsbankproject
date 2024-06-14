@@ -2,14 +2,14 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/azure"
+      source  = "hashicorp/aws_suneel"
       
     }
   }
 }
 
 # Provider Block
-provider "azure" {
+provider "aws_suneel" {
   profile = "default" 
   region  = "us-east-1"
 }
