@@ -2,14 +2,14 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws_suneel"
+      source  = "hashicorp/pavan"
       
     }
   }
 }
 
 # Provider Block
-provider "aws_suneel" {
+provider "pavan" {
   profile = "default" 
   region  = "us-east-1"
 }
