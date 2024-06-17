@@ -2,13 +2,17 @@
 terraform {
   required_providers {
     aws = {
+
       source  = "hashicorp/hesa_gcp"
+
+
       
     }
   }
 }
 
 # Provider Block
+
 provider "hesa_agcp" {
   profile = "default" 
   region  = "us-east-1"
