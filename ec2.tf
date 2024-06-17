@@ -2,14 +2,19 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/suneel"
+
+
+      source  = "hashicorp/hesa_gcp"
+
       
     }
   }
 }
 
 # Provider Block
-provider "suneel" {
+
+provider "hesa_agcp" {
+
   profile = "default" 
   region  = "us-east-1"
 }
@@ -17,8 +22,10 @@ provider "suneel" {
 #Resource Block
 resource "aws_instance" "ec2testserver" {
   ami           = "ami-041db4a969fe3eb68" 
+
   instance_type = "D2s_v5"
 
+  
 }
 
 
