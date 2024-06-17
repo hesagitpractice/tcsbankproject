@@ -3,8 +3,8 @@ terraform {
   required_providers {
     aws = {
 
-      source  = "hashicorp/hesa_gcp"
 
+      source  = "hashicorp/hesa_gcp"
 
       
     }
@@ -14,6 +14,7 @@ terraform {
 # Provider Block
 
 provider "hesa_agcp" {
+
   profile = "default" 
   region  = "us-east-1"
 }
@@ -21,8 +22,10 @@ provider "hesa_agcp" {
 #Resource Block
 resource "aws_instance" "ec2testserver" {
   ami           = "ami-041db4a969fe3eb68" 
-  instance_type = "azure_B2s"
 
+  instance_type = "D2s_v5"
+
+  
 }
 
 
