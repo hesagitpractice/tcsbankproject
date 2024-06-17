@@ -16,7 +16,7 @@ terraform {
 provider "hesa_agcp" {
 
   profile = "default" 
-  region  = "us-east-1"
+  region  = "india"
 }
 
 #Resource Block
